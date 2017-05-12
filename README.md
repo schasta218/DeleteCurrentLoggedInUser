@@ -5,13 +5,13 @@ This script should be a part of a workflow deployed using a Jamf | Pro server. T
 
 ## POLICY
  * WHAT (payloads)
-  * Computer Renaming Script (with a BEFORE priority)
-    * For more information, visit https://www.schasta.com/tech/methods-for-naming-macos-computers/#scripting-solution
-  * Directory Bindings
-  * DeleteCurrentLoggedInUser.sh (with an AFTER priority)
+   * Computer Renaming Script (with a BEFORE priority)
+     * For more information, visit https://www.schasta.com/tech/methods-for-naming-macos-computers/#scripting-solution
+   * Directory Bindings
+   * DeleteCurrentLoggedInUser.sh (with an AFTER priority)
  * WHEN (trigger)
-  * Enrollment
+   * Enrollment
  * HOW OFTEN (frequency)
-  * Once per computer
+   * Once per computer
  * WHOME (Scope)
-  * To a smart group with a criteria that isolates computers enrolled via a particular prestage
+   * To a smart group with a criteria that isolates computers enrolled via a particular prestage
