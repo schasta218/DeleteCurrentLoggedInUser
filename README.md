@@ -15,3 +15,5 @@ This script should be a part of a workflow deployed using a Jamf | Pro server. T
    * Once per computer
  * WHOM (Scope)
    * To a smart group with a criteria that isolates computers enrolled via a particular prestage
+   
+This is a simple script. All it does is grabs the username of the logged in user (Credit to Ben Toms: https://macmule.com/2014/11/19/how-to-get-the-currently-logged-in-user-in-a-more-apple-approved-way/), logs the user out, and deletes the user and their home folder. The idea is that they would then login using their LDAP credentials, and the computer doesn't need to be bound **during** the DEP process, which presents a number of challenges. 
