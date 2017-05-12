@@ -13,5 +13,5 @@ This script should be a part of a workflow deployed using a Jamf | Pro server. T
    * Enrollment
  * HOW OFTEN (frequency)
    * Once per computer
- * WHOME (Scope)
+ * WHOM (Scope)
    * To a smart group with a criteria that isolates computers enrolled via a particular prestage
