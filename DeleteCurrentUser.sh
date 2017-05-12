@@ -2,7 +2,7 @@
 # Convert DEP Enrolled User to LDAP User
 # This script will log the user out upon enrollment and delete their user account. It should only be deployed to computers enrolled via a particular prestage, and should put some further error checking in to make sure it doesn't run after the process has run.
 
-# Get the logged in user
+# Get the logged in user (Credit to Ben Toms: https://macmule.com/2014/11/19/how-to-get-the-currently-logged-in-user-in-a-more-apple-approved-way/)
 loggedInUser=`python -c 'from SystemConfiguration import SCDynamicStoreCopyConsoleUser; import sys; username = (SCDynamicStoreCopyConsoleUser(None, None, None) or [None])[0]; username = [username,""][username in [u"loginwindow", None, u""]]; sys.stdout.write(username + "\n");'`
 
 
